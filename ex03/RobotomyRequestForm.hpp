@@ -1,7 +1,10 @@
 #ifndef ROBOTOMYREQUESTFORM_HPP
 #define ROBOTOMYREQUESTFORM_HPP
 
-#include "AForm.hpp"
+# include <iostream>
+# include <string>
+# include <cstdlib>
+# include "AForm.hpp"
 
 class RobotomyRequestForm : public AForm{
 	private :
