@@ -42,3 +42,53 @@ void AForm::beSigned(Bureaucrat &bur){
 }
 AForm::~AForm(){
 }
+// #include "AForm.hpp"
+
+// // Protected constructor
+// AForm::AForm(const std::string& name, int gradeToSign, int gradeToExecute)
+//     : name(name), isSigned(false), gradeToSign(gradeToSign), gradeToExecute(gradeToExecute) {
+//     if (gradeToSign < 1 || gradeToExecute < 1) {
+//         throw GradeTooHighException();
+//     }
+//     if (gradeToSign > 150 || gradeToExecute > 150) {
+//         throw GradeTooLowException();
+//     }
+// }
+
+// // Destructor
+// AForm::~AForm() {}
+
+// // Getters
+// const std::string& AForm::getName() const { return name; }
+// bool AForm::getIsSigned() const { return isSigned; }
+// int AForm::getGradeToSign() const { return gradeToSign; }
+// int AForm::getGradeToExecute() const { return gradeToExecute; }
+
+// // Be signed
+// void AForm::beSigned(const Bureaucrat& b) {
+//     if (b.getGrade() > gradeToSign) {
+//         throw GradeTooLowException();
+//     }
+//     isSigned = true;
+// }
+
+// // Exceptions
+// const char* AForm::GradeTooHighException::what() const throw() {
+//     return "Form grade is too high!";
+// }
+
+// const char* AForm::GradeTooLowException::what() const throw() {
+//     return "Form grade is too low!";
+// }
+
+// const char* AForm::FormNotSignedException::what() const throw() {
+//     return "Form is not signed!";
+// }
+
+// // Overload operator
+// std::ostream& operator<<(std::ostream& out, const AForm& form) {
+//     out << "Form: " << form.getName() << ", Signed: " << (form.getIsSigned() ? "Yes" : "No")
+//         << ", Grade to Sign: " << form.getGradeToSign()
+//         << ", Grade to Execute: " << form.getGradeToExecute();
+//     return out;
+// }

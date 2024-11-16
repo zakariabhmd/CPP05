@@ -30,3 +30,39 @@ void RobotomyRequestForm::execute(const Bureaucrat& executor)const{
 
 RobotomyRequestForm::~RobotomyRequestForm(){
 }
+// #include "RobotomyRequestForm.hpp"
+// #include <iostream>
+// #include <cstdlib>  // For rand() and srand()
+// #include <ctime>    // For time()
+
+// // Constructor
+// RobotomyRequestForm::RobotomyRequestForm(const std::string& target)
+//     : AForm("RobotomyRequestForm", 72, 45), target(target) {
+//     // Initialize random seed once, to ensure random behavior on each execution
+//     srand(time(0));
+// }
+
+// // Destructor
+// RobotomyRequestForm::~RobotomyRequestForm() {}
+
+// // Execute function: Simulates drilling and robotomy success/failure
+// void RobotomyRequestForm::execute(const Bureaucrat& executor) const {
+//     // Check if the form is signed
+//     if (!getIsSigned()) {
+//         throw FormNotSignedException();
+//     }
+//     // Check if the bureaucrat has the required grade to execute the form
+//     if (executor.getGrade() > getGradeToExecute()) {
+//         throw GradeTooLowException();
+//     }
+
+//     // Simulate drilling noise
+//     std::cout << "Drilling noises..." << std::endl;
+
+//     // 50% chance to succeed or fail the robotomy
+//     if (rand() % 2 == 0) {
+//         std::cout << target << " has been robotomized successfully!" << std::endl;
+//     } else {
+//         std::cout << target << " robotomy failed!" << std::endl;
+//     }
+// }
