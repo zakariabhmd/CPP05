@@ -7,10 +7,10 @@
 int main(){
 	try{
 		Bureaucrat bure(6, "obj");
-		// std::cout << bure.getName() << std::endl;
-		// std::cout << bure.getGrade() <<std::endl;
-		
-		ShrubberyCreationForm shrubberycreation("hasan");
+		std::cout << bure.getName() << std::endl;
+		std::cout << bure.getGrade() <<std::endl;
+
+		ShrubberyCreationForm shrubberycreation("zakaria");
 		shrubberycreation.beSigned(bure);
 		bure.signForm(shrubberycreation);
 
