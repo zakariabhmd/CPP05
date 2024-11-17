@@ -26,27 +26,3 @@ void PresidentialPardonForm::execute(const Bureaucrat& executor)const{
 
 PresidentialPardonForm::~PresidentialPardonForm(){
 }
-// #include "PresidentialPardonForm.hpp"
-// #include <iostream>
-
-// // Constructor
-// PresidentialPardonForm::PresidentialPardonForm(const std::string& target)
-//     : AForm("PresidentialPardonForm", 25, 5), target(target) {}
-
-// // Destructor
-// PresidentialPardonForm::~PresidentialPardonForm() {}
-
-// // Execute function: Informs that the target has been pardoned
-// void PresidentialPardonForm::execute(const Bureaucrat& executor) const {
-//     // Check if the form is signed
-//     if (!getIsSigned()) {
-//         throw FormNotSignedException();
-//     }
-//     // Check if the bureaucrat has the required grade to execute the form
-//     if (executor.getGrade() > getGradeToExecute()) {
-//         throw GradeTooLowException();
-//     }
-
-//     // Inform that the target has been pardoned
-//     std::cout << target << " has been pardoned by Zaphod Beeblebrox." << std::endl;
-// }

@@ -19,25 +19,3 @@ class RobotomyRequestForm : public AForm{
 };
 
 #endif
-// #ifndef ROBOTOMYREQUESTFORM_HPP
-// #define ROBOTOMYREQUESTFORM_HPP
-
-// #include "AForm.hpp"
-// #include <cstdlib>  // For rand()
-
-// class RobotomyRequestForm : public AForm {
-// private:
-//     std::string target;
-
-// public:
-//     // Constructor
-//     RobotomyRequestForm(const std::string& target);
-
-//     // Destructor
-//     ~RobotomyRequestForm();
-
-//     // Override the execute function
-//     void execute(const Bureaucrat& executor) const override;
-// };
-
-// #endif

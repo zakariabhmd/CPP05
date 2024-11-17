@@ -22,16 +22,19 @@ int main(){
 }
 
 // int main() {
-//     Intern someRandomIntern;
-//     AForm* form;
 
 //     // Testing valid form creation
+// 	try{
+
+// 	}
+//     Intern someRandomIntern;
+//     AForm* form;
 //     form = someRandomIntern.makeForm("robotomy request", "Bender");
 //     if (form != nullptr) {
 //         Bureaucrat bob("Bob", 50);  // Create a bureaucrat to sign and execute
 //         bob.signForm(*form);
 //         bob.executeForm(*form);
-//         delete form;  // Don't forget to delete the dynamically allocated form
+//         // delete form;  // Don't forget to delete the dynamically allocated form
 //     }
 
 //     // Testing invalid form creation

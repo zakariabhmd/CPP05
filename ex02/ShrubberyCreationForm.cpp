@@ -41,27 +41,3 @@ void ShrubberyCreationForm::execute(const Bureaucrat& executor) const{
 
 ShrubberyCreationForm::~ShrubberyCreationForm(){
 }
-// #include "ShrubberyCreationForm.hpp"
-// #include <fstream>
-
-// ShrubberyCreationForm::ShrubberyCreationForm(const std::string& target)
-//     : AForm("ShrubberyCreationForm", 145, 137), target(target) {}
-
-// ShrubberyCreationForm::~ShrubberyCreationForm() {}
-
-// void ShrubberyCreationForm::execute(const Bureaucrat& executor) const {
-//     if (!getIsSigned()) {
-//         throw FormNotSignedException();
-//     }
-//     if (executor.getGrade() > getGradeToExecute()) {
-//         throw GradeTooLowException();
-//     }
-
-//     std::ofstream file(target + "_shrubbery");
-//     if (file) {
-//         file << "ASCII TREE" << std::endl;
-//         file.close();
-//     } else {
-//         std::cerr << "Could not create shrubbery file!" << std::endl;
-//     }
-// }
