@@ -9,11 +9,10 @@
 class Form;
 class Bureaucrat {
 private:
-    const std::string name;  // Constant name
-    int grade;               // Grade (1-150)
+    const std::string name;
+    int grade;
 
 public:
-    // Exceptions
     class GradeTooHighException : public std::exception {
     public:
         const char* what() const throw();
@@ -24,7 +23,6 @@ public:
         const char* what() const throw();
     };
 
-    // Constructor & Destructor
     Bureaucrat(const std::string& name, int grade);
     ~Bureaucrat();
 

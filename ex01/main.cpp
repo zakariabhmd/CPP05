@@ -12,10 +12,10 @@ int main() {
         std::cout << f1 << std::endl;
         std::cout << f2 << std::endl;
 
-        b1.signForm(f1);  // Alice should be able to sign
-        b2.signForm(f1);  // Bob shouldn't be able to sign
+        b1.signForm(f1);
+        b2.signForm(f1);
 
-        b2.signForm(f2);  // Bob should be able to sign
+        b2.signForm(f2);
     } catch (const std::exception& e) {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
